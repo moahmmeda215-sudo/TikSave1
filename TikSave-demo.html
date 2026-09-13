@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TikSave — تجربة الموقع</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial;background:#050b18;color:#fff}
+.wrap{max-width:1120px;margin:auto;padding:0 22px}.nav{height:80px;border-bottom:1px solid #1b2a40;background:#08111fe8;display:flex;align-items:center}.nav .wrap{display:flex;align-items:center;gap:30px;width:100%}.brand{font-size:30px;font-weight:900;margin-left:auto}.brand span{color:#587dff}.nav a{color:#dce5f5;text-decoration:none;margin:0 12px;font-size:15px}.hero{text-align:center;min-height:520px;padding:70px 0;position:relative;overflow:hidden}.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.2}.o1{width:300px;height:300px;background:#2167ff;right:-100px;top:80px}.o2{width:280px;height:280px;background:#8a31ff;left:-100px;bottom:-120px}.content{position:relative;z-index:1}.badge{display:inline-block;padding:6px 15px;border:1px solid #285184;background:#0e2340;border-radius:30px;color:#a7cbff;font-size:13px}.hero h1{font-size:54px;line-height:1.25;margin:15px 0}.hero h1 span{background:linear-gradient(90deg,#0c9dff,#7548ff);-webkit-background-clip:text;color:transparent}.hero h2{color:#cbd4e5;font-size:24px;margin:0}.hero p{color:#92a1b8;font-size:17px}.box{max-width:880px;margin:30px auto 0;padding:8px;background:#101a2a;border:1px solid #3e5775;border-radius:16px;display:flex}.box input{flex:1;background:none;border:0;outline:0;color:#fff;font-size:17px;padding:15px}.box button{border:0;border-radius:12px;padding:0 35px;font-size:18px;font-weight:800;color:white;background:linear-gradient(90deg,#5a38ee,#0a8cf4);cursor:pointer}.trust{color:#8797ae;font-size:13px;margin-top:18px}.result{max-width:880px;margin:16px auto 0;background:#0d1b2e;border:1px solid #294766;padding:12px 18px;border-radius:10px;color:#acd0ff}.features{border-top:1px solid #172338;border-bottom:1px solid #172338;padding:48px 0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.card{background:#0b1525;border:1px solid #1a2a41;border-radius:16px;padding:28px;text-align:center}.icon{width:60px;height:60px;margin:auto;display:grid;place-items:center;border-radius:16px;background:#17366a;font-weight:900;font-size:22px}.card h3{margin:13px 0 5px}.card p{color:#8f9db3;margin:0;font-size:14px}.how{padding:55px 0;text-align:center}.how h2{font-size:32px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{background:#0b1525;border:1px solid #1a2a41;border-radius:16px;padding:24px}.num{width:40px;height:40px;display:grid;place-items:center;background:#1468d8;border-radius:50%;margin:auto}.step p{color:#909eb3}footer{text-align:center;color:#6e7e96;border-top:1px solid #172338;padding:28px}
+@media(max-width:800px){.nav a{display:none}.hero h1{font-size:40px}.box{display:block;background:none;border:0;padding:0}.box input{width:100%;background:#101a2a;border:1px solid #3e5775;border-radius:13px;margin-bottom:9px}.box button{width:100%;height:58px}.grid,.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.grid,.steps{grid-template-columns:1fr}.hero{padding-top:45px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap"><div class="brand">Tik<span>Save</span></div><nav><a href="#home">الرئيسية</a><a href="#features">المميزات</a><a href="#how">كيف يعمل؟</a></nav></div></header>
+<main id="home">
+<section class="hero">
+<div class="orb o1"></div><div class="orb o2"></div>
+<div class="wrap content">
+<div class="badge">⚡ تجربة مباشرة للواجهة</div>
+<h1>تحميل فيديوهات <span>تيك توك</span></h1>
+<h2>بكل سهولة وسرعة — بدون علامة مائية</h2>
+<p>الصق رابط الفيديو في الأسفل وجرب واجهة التحميل.</p>
+<form class="box" id="f"><input id="u" type="url" placeholder="الصق رابط الفيديو هنا..." required><button>تحميل ↓</button></form>
+<div class="trust">🛡 آمن &nbsp; • &nbsp; ⚡ سريع &nbsp; • &nbsp; متوافق مع الهاتف والكمبيوتر</div>
+<div id="r" class="result" hidden></div>
+</div>
+</section>
+<section class="features" id="features"><div class="wrap grid">
+<div class="card"><div class="icon">ϟ</div><h3>تحميل سريع</h3><p>واجهة بسيطة وسريعة للاستخدام.</p></div>
+<div class="card"><div class="icon">◉</div><h3>بدون علامة مائية</h3><p>مصممة لعرض خيار التنزيل بدون علامة مائية عند توفره.</p></div>
+<div class="card"><div class="icon">HD</div><h3>جودة عالية</h3><p>دعم خيارات الجودة من خلال الـBackend.</p></div>
+<div class="card"><div class="icon">▣</div><h3>جميع الأجهزة</h3><p>تصميم متجاوب مع الهاتف والكمبيوتر.</p></div>
+</div></section>
+<section class="how" id="how"><div class="wrap"><h2>كيف يعمل؟</h2><div class="steps">
+<div class="step"><div class="num">1</div><h3>انسخ الرابط</h3><p>انسخ رابط الفيديو من TikTok.</p></div>
+<div class="step"><div class="num">2</div><h3>الصق الرابط</h3><p>ضع الرابط في مربع التحميل.</p></div>
+<div class="step"><div class="num">3</div><h3>حمّل</h3><p>عند ربط الـBackend يظهر رابط التنزيل.</p></div>
+</div></div></section>
+</main>
+<footer>© 2026 TikSave</footer>
+<script>
+document.getElementById('f').addEventListener('submit',e=>{
+ e.preventDefault();
+ const u=document.getElementById('u').value.trim(),r=document.getElementById('r');
+ r.hidden=false;
+ if(!/tiktok\.com/i.test(u)){r.textContent='أدخل رابط TikTok صحيحاً.';return}
+ r.textContent='تم استلام الرابط — هذه نسخة تجربة للواجهة فقط. عند نشر الـBackend سيظهر زر التنزيل الحقيقي هنا.';
+});
+</script>
+</body></html>
